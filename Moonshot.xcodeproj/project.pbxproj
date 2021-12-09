@@ -14,6 +14,7 @@
 		5A3A7A612762126B0030D380 /* GeometryReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3A7A602762126B0030D380 /* GeometryReaderView.swift */; };
 		5A3A7A63276212A20030D380 /* ScrollingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3A7A62276212A20030D380 /* ScrollingView.swift */; };
 		5A3A7A652762501C0030D380 /* NavigationLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3A7A642762501C0030D380 /* NavigationLinkView.swift */; };
+		5A3A7A67276250E90030D380 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3A7A66276250E90030D380 /* GridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		5A3A7A602762126B0030D380 /* GeometryReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderView.swift; sourceTree = "<group>"; };
 		5A3A7A62276212A20030D380 /* ScrollingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingView.swift; sourceTree = "<group>"; };
 		5A3A7A642762501C0030D380 /* NavigationLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinkView.swift; sourceTree = "<group>"; };
+		5A3A7A66276250E90030D380 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			children = (
 				5A13F9DD2761F4A600D4E107 /* MoonshotApp.swift */,
 				5A13F9DF2761F4A600D4E107 /* ContentView.swift */,
+				5A3A7A66276250E90030D380 /* GridView.swift */,
 				5A3A7A642762501C0030D380 /* NavigationLinkView.swift */,
 				5A3A7A62276212A20030D380 /* ScrollingView.swift */,
 				5A3A7A602762126B0030D380 /* GeometryReaderView.swift */,
@@ -150,6 +153,7 @@
 				5A3A7A652762501C0030D380 /* NavigationLinkView.swift in Sources */,
 				5A13F9DE2761F4A600D4E107 /* MoonshotApp.swift in Sources */,
 				5A3A7A63276212A20030D380 /* ScrollingView.swift in Sources */,
+				5A3A7A67276250E90030D380 /* GridView.swift in Sources */,
 				5A3A7A612762126B0030D380 /* GeometryReaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
