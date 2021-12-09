@@ -13,6 +13,7 @@
 		5A13F9E52761F4AA00D4E107 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A13F9E42761F4AA00D4E107 /* Preview Assets.xcassets */; };
 		5A3A7A612762126B0030D380 /* GeometryReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3A7A602762126B0030D380 /* GeometryReaderView.swift */; };
 		5A3A7A63276212A20030D380 /* ScrollingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3A7A62276212A20030D380 /* ScrollingView.swift */; };
+		5A3A7A652762501C0030D380 /* NavigationLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3A7A642762501C0030D380 /* NavigationLinkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		5A13F9E42761F4AA00D4E107 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5A3A7A602762126B0030D380 /* GeometryReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderView.swift; sourceTree = "<group>"; };
 		5A3A7A62276212A20030D380 /* ScrollingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingView.swift; sourceTree = "<group>"; };
+		5A3A7A642762501C0030D380 /* NavigationLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			children = (
 				5A13F9DD2761F4A600D4E107 /* MoonshotApp.swift */,
 				5A13F9DF2761F4A600D4E107 /* ContentView.swift */,
+				5A3A7A642762501C0030D380 /* NavigationLinkView.swift */,
 				5A3A7A62276212A20030D380 /* ScrollingView.swift */,
 				5A3A7A602762126B0030D380 /* GeometryReaderView.swift */,
 				5A13F9E12761F4AA00D4E107 /* Assets.xcassets */,
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A13F9E02761F4A600D4E107 /* ContentView.swift in Sources */,
+				5A3A7A652762501C0030D380 /* NavigationLinkView.swift in Sources */,
 				5A13F9DE2761F4A600D4E107 /* MoonshotApp.swift in Sources */,
 				5A3A7A63276212A20030D380 /* ScrollingView.swift in Sources */,
 				5A3A7A612762126B0030D380 /* GeometryReaderView.swift in Sources */,
