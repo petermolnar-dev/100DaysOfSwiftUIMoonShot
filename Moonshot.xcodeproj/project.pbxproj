@@ -22,6 +22,7 @@
 		5ADFCE0D276395FF00C03D7E /* CrewRole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADFCE0C276395FF00C03D7E /* CrewRole.swift */; };
 		5ADFCE0F2763966D00C03D7E /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADFCE0E2763966D00C03D7E /* Mission.swift */; };
 		5ADFCE112763A4B800C03D7E /* Color-Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADFCE102763A4B800C03D7E /* Color-Theme.swift */; };
+		C785F341276506950016F54F /* MissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C785F340276506940016F54F /* MissionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		5ADFCE0C276395FF00C03D7E /* CrewRole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewRole.swift; sourceTree = "<group>"; };
 		5ADFCE0E2763966D00C03D7E /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
 		5ADFCE102763A4B800C03D7E /* Color-Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Theme.swift"; sourceTree = "<group>"; };
+		C785F340276506940016F54F /* MissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				5ADFCE042763919600C03D7E /* missions.json */,
 				5A13F9DD2761F4A600D4E107 /* MoonshotApp.swift */,
 				5A13F9DF2761F4A600D4E107 /* ContentView.swift */,
+				C785F340276506940016F54F /* MissionView.swift */,
 				5ADFCE102763A4B800C03D7E /* Color-Theme.swift */,
 				5ADFCE0C276395FF00C03D7E /* CrewRole.swift */,
 				5ADFCE0E2763966D00C03D7E /* Mission.swift */,
@@ -177,6 +180,7 @@
 				5ADFCE112763A4B800C03D7E /* Color-Theme.swift in Sources */,
 				5A3A7A652762501C0030D380 /* NavigationLinkView.swift in Sources */,
 				5A13F9DE2761F4A600D4E107 /* MoonshotApp.swift in Sources */,
+				C785F341276506950016F54F /* MissionView.swift in Sources */,
 				5ADFCE0B2763937200C03D7E /* Bundle-Decodable.swift in Sources */,
 				5A3A7A63276212A20030D380 /* ScrollingView.swift in Sources */,
 				5ADFCE092763926000C03D7E /* Astronaut.swift in Sources */,
