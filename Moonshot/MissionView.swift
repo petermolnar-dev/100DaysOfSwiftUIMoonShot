@@ -7,13 +7,14 @@
 
 import SwiftUI
 
+struct CrewMember {
+    let role: String
+    let astronaut: Astronaut
+}
+
+
 struct MissionView: View {
-    
-    struct CrewMember {
-        let role: String
-        let astronaut: Astronaut
-    }
-    
+
     let crew: [CrewMember]
     let mission: Mission
     
@@ -48,50 +49,14 @@ struct MissionView: View {
                             .font(.title2.bold())
                             .foregroundColor(.secondary)
                             .padding(.bottom, 5)
-                        Text("Crew")
-                            .font(.title.bold())
-                            .padding(.bottom, 5)
-                        ScrollView(.horizontal, showsIndicators: false) {
-                            HStack {
-                                ForEach(crew, id: \.role) { crewMember in
-                                    NavigationLink {
-                                        AstronautView(astronaut: crewMember.astronaut)
-                                    } label: {
-                                        HStack {
-                                            Image(crewMember.astronaut.id)
-                                                .resizable()
-                                                .frame(width: 104, height: 72)
-                                                .clipShape(Capsule())
-                                                .overlay(
-                                                    Capsule()
-                                                        .strokeBorder(.white, lineWidth: 1)
-                                                )
-                                            
-                                            VStack(alignment: .leading) {
-                                                Text(crewMember.astronaut.name)
-                                                    .foregroundColor(.white)
-                                                    .font(.headline)
-                                                Text(crewMember.role)
-                                                    .foregroundColor(.secondary)
-                                            }
-                                        }
-                                        .padding(.horizontal)
-                                    }
-                                }
-                            }
-                        }
-                        Rectangle()
-                            .frame(height: 2)
-                            .foregroundColor(.lightBackground)
-                            .padding(.vertical)
+                        makeDivider()
+                        CrewScrollView(crew: crew)
+                        makeDivider()
                         Text("Mission Highlights")
                             .font(.title.bold())
                             .padding(.bottom, 5)
                         Text(mission.description)
-                        Rectangle()
-                            .frame(height: 2)
-                            .foregroundColor(.lightBackground)
-                            .padding(.vertical)
+                        makeDivider()
                     }
                     .padding(.horizontal)
                 }
@@ -102,6 +67,53 @@ struct MissionView: View {
         .navigationBarTitleDisplayMode(.inline)
         .background(.darkBackground)
     }
+    
+    func makeDivider() -> some View {
+        return Rectangle()
+            .frame(height: 2)
+            .foregroundColor(.lightBackground)
+            .padding(.vertical)
+    }
+}
+
+struct CrewScrollView: View {
+    let crew: [CrewMember]
+    
+    var body: some View {
+        Text("Crew")
+            .font(.title.bold())
+            .padding(.bottom, 5)
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack {
+                ForEach(crew, id: \.role) { crewMember in
+                    NavigationLink {
+                        AstronautView(astronaut: crewMember.astronaut)
+                    } label: {
+                        HStack {
+                            Image(crewMember.astronaut.id)
+                                .resizable()
+                                .frame(width: 104, height: 72)
+                                .clipShape(Capsule())
+                                .overlay(
+                                    Capsule()
+                                        .strokeBorder(.white, lineWidth: 1)
+                                )
+                            
+                            VStack(alignment: .leading) {
+                                Text(crewMember.astronaut.name)
+                                    .foregroundColor(.white)
+                                    .font(.headline)
+                                Text(crewMember.role)
+                                    .foregroundColor(.secondary)
+                            }
+                        }
+                        .padding(.horizontal)
+                    }
+                }
+            }
+        }
+    }
+    
 }
 
 struct MissionView_Previews: PreviewProvider {
