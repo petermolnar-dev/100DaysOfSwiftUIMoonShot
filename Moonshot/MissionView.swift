@@ -41,6 +41,13 @@ struct MissionView: View {
                         .padding(.top)
                     
                     VStack(alignment: .leading) {
+                        Text("Launch date")
+                            .font(.title.bold())
+                            .padding(.bottom, 5)
+                        Text(mission.formattedLaunchDate == "N/A" ? "Never launched" : mission.formattedLaunchDate)
+                            .font(.title2.bold())
+                            .foregroundColor(.secondary)
+                            .padding(.bottom, 5)
                         Text("Crew")
                             .font(.title.bold())
                             .padding(.bottom, 5)
@@ -102,7 +109,7 @@ struct MissionView_Previews: PreviewProvider {
     static let astronauts: [String: Astronaut] = Bundle.main.decode("astronauts.json")
     
     static var previews: some View {
-        MissionView(mission: missions[0], astronauts: astronauts)
+        MissionView(mission: missions[1], astronauts: astronauts)
             .preferredColorScheme(.dark)
     }
 }
