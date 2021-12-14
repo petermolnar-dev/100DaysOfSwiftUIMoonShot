@@ -44,7 +44,6 @@ struct MainListView: View {
                 }
             }
             .background(.darkBackground)
-            .listStyle(.plain)
             .listRowBackground(Color.darkBackground)
         }
         .listStyle(.plain)
