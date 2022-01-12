@@ -36,11 +36,9 @@ struct MainListView: View {
                         .padding(.vertical)
                         .frame(maxWidth: .infinity)
                         .background(.lightBackground)
+                        .clipShape(RoundedRectangle(cornerRadius: 10))
+
                     }
-                    .clipShape(RoundedRectangle(cornerRadius: 10))
-                    .overlay(RoundedRectangle(cornerRadius: 10)
-                                .stroke(.lightBackground)
-                    )
                 }
             }
             .background(.darkBackground)
